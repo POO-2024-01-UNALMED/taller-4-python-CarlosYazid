@@ -1,3 +1,6 @@
+
+import subprocess
+subprocess.run(["pip", "install","multimethod"])
 from multimethod import multimethod
 
 class Asignatura:
