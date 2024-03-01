@@ -6,9 +6,8 @@ from multimethod import multimethod
 class Asignatura:
 
     @multimethod
-    def __init__(self, nombre, salon, salon = "remoto"):
+    def __init__(self, nombre, salon = "remoto"):
         self._nombre = nombre
-        self._salon = salon
         self._salon = salon
     
     @multimethod
