@@ -1,5 +1,19 @@
 from classroom.asignatura import Asignatura
 
+"""
+    Taller 4 Python
+
+    Realizado el 29 de febrero del 2024
+    Desarrollado por Carlos Yazid Padilla
+    Topico: Sobrecarga y Destructores
+
+    Dependencias: 
+    
+        - classroom > grupo
+        - classroom > asignatura
+    
+"""
+
 class Grupo:
     grado = "Grado 12"
 
@@ -20,16 +34,10 @@ class Grupo:
 
     def __str__(self):
         msg = "Grupo de estudiantes: "
-        return msg + self._grupo if self._grupo != "grupo ordinado" else msg +"grupo predeterminado"
-
-    """@ classmethod
-    def asignarNombre(cls, nombre="Grado 10"):
-        cls.grado = nombre"""
+        return msg + self._grupo
 
     @ classmethod
     def asignarNombre(cls, nombre="Grado 6"):
         cls.grado = nombre
 
-    """@ classmethod
-    def asignarNombre(cls, nombre="Grado 4"):
-        cls.grado = nombre"""
+# Anti-Copy: Carlos Padilla
